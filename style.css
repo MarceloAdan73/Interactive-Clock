@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inconsolata', monospace;
+    background: linear-gradient(135deg, #0f0f23, #1a1a2e, #16213e);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.widget {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 400px;
+    width: 90%;
+    transition: transform 0.3s ease;
+}
+
+.widget:hover {
+    transform: scale(1.02);
+}
+
+.widget h1 {
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00ff88;
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+    letter-spacing: 2px;
+}
+
+.fecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-size: 1.2em;
+}
+
+.fecha p {
+    margin: 0 5px;
+    color: #e0e0e0;
+    transition: color 0.3s ease;
+}
+
+.fecha p:hover {
+    color: #00ff88;
+}
+
+.reloj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-weight: 300;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.reloj p {
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    transition: all 0.5s ease;
+}
+
+.reloj p:nth-child(odd) {
+    color: #00ff88;
+    font-size: 2em;
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+}
+
+.cajaSegundos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: -5px;
+    font-size: 0.8em;
+}
+
+.cajaSegundos .ampm {
+    font-size: 1em;
+    color: #00ff88;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.cajaSegundos .segundos {
+    font-size: 2em;
+}
+
+@media (max-width: 768px) {
+    .widget { padding: 20px; }
+    .widget h1 { font-size: 2em; }
+    .reloj { font-size: 2em; }
+    .fecha { font-size: 1em; }
+    .cajaSegundos { flex-direction: row; gap: 5px; }
+}
+
+@media (max-width: 480px) {
+    .reloj { font-size: 1.5em; }
+    .fecha { flex-direction: column; gap: 10px; }
+}
