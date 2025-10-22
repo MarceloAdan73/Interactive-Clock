@@ -4,7 +4,7 @@ A modern, responsive digital clock with **glassmorphism**, neon glow effects, an
 
 ![Reloj Interactivo Demo](reloj.png)
 
-Live demo   
+🚀 Live demo   
 [View Live Demo](https://marceloadan73.github.io/reloj-interactivo/)
 
 ## Technologies
@@ -21,7 +21,8 @@ Live demo
 - Hover effects on date elements
 - Clean, modern UI with dark gradient background
 
-## How to Use
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/MarceloAdan73/reloj-interactivo.git
+---
+
+👨‍💻 Developer  
+**Marcelo**  
+[View GitHub Profile](https://github.com/MarceloAdan73) 
