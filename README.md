@@ -4,8 +4,8 @@ A modern, responsive digital clock with **glassmorphism**, neon glow effects, an
 
 ![Reloj Interactivo Demo](screenshot.png)
 
-Live demo  
-View the project on GitHub Pages
+Live demo   
+[View Live Demo](https://marceloadan73.github.io/reloj-interactivo/)
 
 ## Technologies
 - **HTML5**
